@@ -5,7 +5,9 @@ import AccountManagementCard from "../components/cards/AccountManagementCard";
 import RidersManagementCard from "../components/cards/RidersManagementCard";
 import ReportsCard from "../components/cards/ReportsCard";
 import SalesChart from "../components/charts/SalesChart";
+import Analysis from "../components/cards/Analysis";
 import LoadingComponent from "../components/ui/LoadingComponent";
+import StatisticalAnalysis from "../components/cards/StatisticalAnalysis";
 
 const AdvertisementsList2 = lazy(() =>
   import("../features/advertisements/AdvertisementsList2")
@@ -21,10 +23,10 @@ export default function DashboardPage() {
       <Container>
         <Row>
           <Col className="my-2 p-2">
-      <Suspense fallback={<LoadingComponent />}>
-        <AdvertisementsList2 />
-      </Suspense>
-      </Col>
+            <Suspense fallback={<LoadingComponent />}>
+              <AdvertisementsList2 />
+            </Suspense>
+          </Col>
         </Row>
         <Row>
           <Col className="w-100 bg-primary ms-5 me-1 p-2 rounded-2">
@@ -38,10 +40,20 @@ export default function DashboardPage() {
           {/* <Col className="w-100 bg-secondary m-1 p-2 rounded-2">
             <RidersManagementCard />
           </Col> */}
-          <Col className="bg-success mx-5 mt-2 p-2 rounded-2">
+          <Col className="bg-success mx-5 mt-2 p-3 rounded-2">
             <ReportsCard />
           </Col>
         </Row>
+        <Row>
+          <Col className="bg-primary mx-5 mt-2 p-3 rounded-2">
+            <StatisticalAnalysis/>
+          </Col>
+        </Row>
+        {/* <Row>
+          <Col>
+            <Analysis/>
+          </Col>
+        </Row> */}
         <SalesChart />
       </Container>
     </>
