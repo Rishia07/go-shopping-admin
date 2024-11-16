@@ -29,23 +29,24 @@ export default function DashboardPage() {
           </Col>
         </Row>
         <Row>
-          <Col className="w-100 bg-primary ms-5 me-1 p-2 rounded-2">
-            <InventorySalesCard />
-          </Col>
-          <Col className="w-100 bg-warning me-5 ms-1 p-2 rounded-2">
+          
+        <Col className="w-100 bg-warning mx-5 rounded-2">
             <AccountManagementCard />
+          </Col>
+        </Row>
+        <Row>
+          <Col className="w-100 bg-primary mx-5 mt-2 p-2 rounded-2">
+            <InventorySalesCard />
           </Col>
         </Row>
         <Row>
           {/* <Col className="w-100 bg-secondary m-1 p-2 rounded-2">
             <RidersManagementCard />
           </Col> */}
-          <Col className="bg-success mx-5 mt-2 p-3 rounded-2">
+          <Col className="bg-success ms-5 me-1 mt-2 p-2 rounded-2">
             <ReportsCard />
           </Col>
-        </Row>
-        <Row>
-          <Col className="bg-primary mx-5 mt-2 p-3 rounded-2">
+          <Col className="bg-warning me-5 ms-1 mt-2 p-2 rounded-2">
             <StatisticalAnalysis/>
           </Col>
         </Row>

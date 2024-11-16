@@ -79,7 +79,7 @@ export default function ReportsCard() {
   }
 
   return (
-    <div ref={componentRef} className="text-white">
+    <div ref={componentRef} className="text-white align-items-end">
       <h4>Monthly Report - {format(currentMonth, "MMMM yyyy")}</h4>
       {monthlyOrders.length === 0 ? (
         <p>No orders for this month yet.</p>

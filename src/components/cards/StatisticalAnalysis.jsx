@@ -50,16 +50,16 @@ export default function StatisticalAnalysis() {
   }
 
   return (
-    <div className="text-white">
+    <div>
       <h2>Statistical Analysis</h2>
       <div>
-        <h3>Descriptive Statistics</h3>
+        {/* <h3>Descriptive Statistics</h3> */}
         <p>Total Revenue: ₱ {stats.totalRevenue.toFixed(2)}</p>
         <p>Average Order Value: ₱ {stats.averageOrderValue.toFixed(2)}</p>
         <p>Median Order Value: ₱ {stats.medianOrderValue.toFixed(2)}</p>
         <p>Standard Deviation: ₱ {stats.standardDeviation.toFixed(2)}</p>
       </div>
-      <div>
+      {/* <div>
         <h3>Monthly Distribution</h3>
         <ul>
           {stats.monthlyDistribution.map((count, index) => (
@@ -68,7 +68,7 @@ export default function StatisticalAnalysis() {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }
